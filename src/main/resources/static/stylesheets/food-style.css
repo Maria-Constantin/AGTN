@@ -1,0 +1,153 @@
+/*
+    Index:
+    - body
+    - header
+    - clear search on focus
+    - search box
+    - submit button
+    - input field focus
+    - input text
+    - filters
+    - checkbox align
+    - filter align
+    - filter style
+    - checkbox size
+    - align label
+*/
+
+body{
+    border: auto;
+}
+
+/* Page header */
+h1{
+    position: absolute; 
+    padding: 6px 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14pt;
+    margin-top: -10%;
+}
+
+/* Clear search on focus */
+input:focus::placeholder{
+    color: transparent;
+}
+
+.top{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    float: center;
+    margin-top: 10%;
+    align-items: center;
+}
+
+/* Search box style */
+.search-term{
+    position: absolute;
+    padding: 6px 10px;
+    width: 50%;
+    background: white;
+    font-size: 17px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-left: 25%;
+}
+
+/*Submit button, don't display*/
+.food-btn{
+    display: none;
+}
+
+/* Input field focus style */
+.search-term:focus{
+    color: black;
+}
+
+/* Input text style */
+.search-term input[type='text'] {
+    font-family: Open Sans, sans-serif;
+    font-size: 17px;
+}
+
+/* Filters */
+.filters{
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 75%;
+    align-content: center;
+}
+
+/* Checkbox align */
+input[type="checkbox"]{
+    vertical-align: middle;
+}
+
+/* Filter style */
+.checkbox-custom 
+.checkbox-label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+/* Checkbox size */
+input.checkbox-custom{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0;
+}
+
+/* Align label */
+label{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom:0;
+}
+
+.food-list{
+    padding-top:50px;
+}
+
+.btn-food{
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #AADB95;
+  border-color: black;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5px;  
+}
+
+.food-container {
+    display: flex;
+    position:absolute;
+}
+  
+.image-style{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* the description text for the button */
+.food-description {
+    font-size:14px;
+    font-weight: normal;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    opacity: .0;
+    width : 190px;
+    height : 190px;
+}

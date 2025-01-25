@@ -1,0 +1,50 @@
+.favourite-container {
+  display: flex;
+}
+
+#fav-span {
+  margin: auto 0;
+}
+
+.heart {
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.heart.heart-empty {
+  background-image: url("../FrontEndImages/heart-empty.png");
+}
+
+.heart.heart-full {
+  background-image: url("../FrontEndImages/heart-full.png");
+}
+
+.favourites-list{
+  padding: 50px;
+}
+
+.btn-favs{
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #AADB95;
+  border-color: black;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin: 5px;
+}
+
+.chevron:after{
+  content: ' ';
+  display: inline;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  height: 10px;
+  width: 10px;
+  transform: rotate(-45deg);
+  float: right;
+  margin-top: -15px;
+  padding-bottom: none;
+}

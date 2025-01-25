@@ -1,0 +1,32 @@
+/*
+    Index:
+    - page background
+    - home screen header
+    - visited links props
+    - image props
+*/
+
+/* Page background */
+body{
+    background-color: #ECF2CE;
+}
+
+/* Home screen header */
+h1{
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Visited links props */
+a:link,
+a:visited{
+    text-decoration:none;
+}
+
+/* Image props */
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

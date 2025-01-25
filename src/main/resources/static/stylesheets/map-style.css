@@ -1,0 +1,68 @@
+/*
+  Index:
+  - page wrapper
+  - page body padding
+  - map content area
+  - legend props
+  - legend image
+  - map page props
+  - map image
+*/
+
+/* Page wrapper */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevents overlap with navbar */
+body { 
+  padding-top: 40px; 
+}
+
+/* Map content area */
+#map {
+	height: 100%;
+}
+
+/* Legend content */
+#legend {
+  font-family: Helvetica, sans-serif;
+  font-size: calc(8px + 0.2vw);
+  text-align: center;
+  background: #fff;
+  padding: 1px;
+  margin: 1px;
+  border: 1px solid #000;
+}
+
+/* Legend image */
+#legend img {
+  vertical-align: middle;
+  width: 30%;
+  height: 30%;
+}
+
+/* Map page props - kids mode */
+#centerLocation{
+  width: 50px;
+  height: 50px;
+}
+
+/* Map image props */
+#centerLocation img{
+  width: 100%;
+  height: 100%;
+}
+
+#blurbContainer{
+  position: absolute; 
+  display: inline-block;
+  margin-right: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+

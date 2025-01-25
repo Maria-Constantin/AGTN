@@ -1,0 +1,29 @@
+/*
+    Index:
+    - navbar props
+	- navbar icons props
+	- focus icon on present page
+	- dropdown items prop
+*/
+
+/* navbar props */
+.navbar {
+	background-color: #8ACD6D;
+	padding: 0px;
+}
+
+/* navbar icons props */
+.icon {
+	padding: 8px;
+}
+
+/* focus icon on present page */
+img.focus {
+	background-color: #AADB95;	
+}
+
+/* dropdown items prop */
+a.dropdown-item {
+	font-size: 30px;
+	padding: 30px;
+}

@@ -1,0 +1,129 @@
+/*
+    Index:
+    - home screen container
+    - home buttons prop
+    - logo image
+    - profile page image
+    - update profile
+    - search location input/select
+    - create account link
+    - section header (h1)
+    - quiz question prop
+*/
+
+/* Home screen container */
+.home-container, .start-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* User profile */
+.profile-container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Home buttons */
+.btn-success {
+    margin: 5% 0; 
+}
+
+.btn-profile
+{
+    width: 190px;
+    height: 45px;
+    margin: 5% 0; 
+    left: 30px;
+}
+
+/* Home buttons */
+.btn-success,
+.btn-profile,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:active:focus,
+.btn-success:visited,
+.btn-success:focus {
+    background-color: #AADB95;
+    border-color: black;
+    font-weight: bold;
+}
+
+/* Logo image */
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    max-height: 70%;
+    margin-bottom: 8%;
+}
+
+
+/* images for the webpage */
+.standardImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    max-height: 70%;
+    margin-bottom: 3%;
+}
+
+/* Profile image */
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    max-height: 90%;
+    margin-bottom: 10%;
+}
+
+/* Update profile */
+.changeProf {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    max-height: 60%;
+    margin-bottom: 10%;
+}
+
+/* Search location - Destinations page */
+input, select {
+    text-align: center;    
+}
+
+/* Search location - Destinations page */
+select {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/* Index link (create account page) */
+a.page-link {
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-color: #8cbd77;
+    color: #8cbd77;
+}
+
+/* Section header (h1) */
+.section-header {
+    margin-bottom: 5%;
+}
+
+/* Quiz question */
+.question {
+    padding-bottom: 2%;
+}

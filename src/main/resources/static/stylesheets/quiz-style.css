@@ -1,0 +1,109 @@
+/*
+    Index:
+    - Quiz answer buttons prop
+    - Quiz option buttons
+    - Title prop
+    - Quiz question
+    - Button image
+    - Quiz category button 
+    - Menu button
+    - Watermark background style
+    - Watermark text style
+*/
+
+/* Quiz buttons prop */
+.quiz-button {
+    border-radius: 5px;
+    transition: opacity .3s linear;
+    color: #fff;
+    font-size: 2vh;
+    letter-spacing: 2px;
+    padding: 13px 18px;
+    text-transform: uppercase;
+    top: -3px;
+    margin-bottom: 10px;
+    opacity: 0.72;
+    line-height: 20px;
+    background-color:#77cc6d;
+}
+
+/* Quiz buttons prop */
+.quiz-button.large {
+    font-size: 2vh;
+    padding: 15px 22px;
+}
+
+/* Quiz buttons prop */
+.quiz-button:hover{
+    opacity:1;
+}
+
+/* Quiz buttons prop */
+.quiz-button:focus{
+    opacity: 0.72;
+}
+
+/* Quiz option buttons*/
+.option {
+    margin: 1vh 0;
+    font-weight: bold;
+    min-width: 70%;
+    max-width: 70%;
+}
+
+/* Title prop */
+.title {
+    font-size: 3.5vh;
+}
+
+/* Quiz question */
+.option,
+.question,
+#score {
+    font-size: 2.5vh;
+}
+
+/* Button image */
+.button-image {
+    float: left;
+    width: 6vh;
+    height: 6vh;   
+}
+
+/* Quiz category button */
+.quiz-category {
+    font-size: 3vh;
+    padding-left: 2vh;
+}
+
+/* Menu button */
+.menu-button {
+    margin-bottom: 5vh;
+}
+
+/* Watermark background style */
+.watermarks{
+    position: relative;
+    overflow: hidden;
+}
+
+/* Watermark text style */
+.watermarks::before{
+    position: fixed;
+    display: block;
+    width: 200%;
+    height: 200%;
+    margin-top: -50%;
+    margin-left: -20%;
+
+    font-size: 20px;
+    font-style: bold;
+    color: grey;
+    opacity: 0.7;
+
+    line-height: 2em;
+    letter-spacing: 2px;
+    transform: rotate(-25deg);
+
+    content: attr(data-watermark);
+}

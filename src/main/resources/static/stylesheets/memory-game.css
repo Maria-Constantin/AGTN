@@ -1,0 +1,101 @@
+.game-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+#game-board {
+    display: grid;
+    flex-wrap: wrap;
+    width: auto;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: center;
+  }
+
+  #game-board-kids {
+    display: grid;
+    flex-wrap: wrap;
+    width: auto;
+    grid-template-columns: 100px 100px;
+    justify-content: center;
+  }
+
+  .card {
+    top: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .matched {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    cursor: default;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  button {
+    margin: 10px;
+  }
+
+  .logo 
+  {
+	width: 50px;
+  height: 50px;
+	margin: 5px;
+	border: 1px solid #000;
+  }
+
+.timer
+  {
+      position: relative;
+      left: 10px;
+  }
+
+.title
+{
+  position: relative;
+  right: 0px;
+  top: 35px;
+}
+
+.game-menu
+{
+    position: relative;
+    left: 0px;
+    right: 0px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #AADB95;
+    border-color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 40%;
+    margin: 5px;
+}
+
+.points 
+{
+  position: relative;
+  padding: 10px 30px;
+  left: 0px;
+}
+
+.over-title{
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.end-game{
+  width: 300px;
+  height: 150px;
+}

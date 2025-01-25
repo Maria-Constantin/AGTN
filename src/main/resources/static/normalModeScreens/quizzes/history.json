@@ -1,0 +1,70 @@
+[{
+    "q": "Which popular artist has their first show in the city of Nottingham?",
+    "a": [{"text": "Paul Mccartney", "isCorrect": true},
+        {"text": "John Lennon", "isCorrect": false},
+        {"text": "Ed Sheeran", "isCorrect": false}
+    ]
+},
+{
+    "q": "Where is the famous batman manor featured in the movie “Dark knight rises” located in nottingham?",
+    "a": [{"text": "Wollaton Hall", "isCorrect": true},
+        {"text": "Beeston", "isCorrect": false},
+        {"text": "Jubilee Campus", "isCorrect": false}
+    ]
+},
+{
+    "q": "Which landmark is the ancestral home of the famous poet Lord Byron who is associated with the Romantic movement",
+    "a": [{"text": "1852", "isCorrect": true},
+        {"text": "1900", "isCorrect": false},
+        {"text": "2002", "isCorrect": false}
+    ]
+},
+{
+    "q": "Which popular store originated in Nottingham?",
+    "a": [{"text": "Boots", "isCorrect": true},
+        {"text": "H and M", "isCorrect": false},
+        {"text": "Currys", "isCorrect": false}
+    ]
+},
+{
+    "q": "Where in Nottingham did Mahatma Gandhi visit his nephew?",
+    "a": [{"text": "Beeston", "isCorrect": true},
+        {"text": "Lenton", "isCorrect": false},
+        {"text": "StapleFord", "isCorrect": false}
+    ]
+},
+{
+    "q": " What was the oldest pub in the world called (located in Nottingham)?",
+    "a": [{"text": "Ye Olde Trip to Jerusalem", "isCorrect": true},
+        {"text": "The Bird In Hand", "isCorrect": false},
+        {"text": "Hare & Hounds", "isCorrect": false}
+    ]
+},
+{
+    "q": "Which Arnold-born engineer developed the first high-pressure water supply?",
+    "a": [{"text": "Thomas Hawkley", "isCorrect": true},
+        {"text": "Alexander Graham Bell", "isCorrect": false},
+        {"text": "George Stevenson", "isCorrect": false}
+    ]
+},
+{
+    "q": "Which university in Nottingham brought forth the invention of the MRI?",
+    "a": [{"text": "University of Nottingham", "isCorrect": true},
+        {"text": "Nottingham Trent University", "isCorrect": false},
+        {"text": "University of Law", "isCorrect": false}
+    ]
+},
+{
+    "q": "Which painkiller was invented in Nottingham?",
+    "a": [{"text": "Ibuprofen", "isCorrect": true},
+        {"text": "Paracetamol", "isCorrect": false},
+        {"text": "Morphine", "isCorrect": false}
+    ]
+},
+{
+    "q": "What is illegal to do in Nottingham?",
+    "a": [{"text": "To rent out caves", "isCorrect": true},
+        {"text": "Throw gum on the floor", "isCorrect": false},
+        {"text": "Pop balloons in public", "isCorrect": false}
+    ]
+}]

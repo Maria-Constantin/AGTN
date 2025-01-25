@@ -1,0 +1,43 @@
+
+
+
+/* Menu button for the game page */
+.menu-button {
+    margin-bottom: 5vh;
+}
+
+
+/* game buttons prop */
+.game-button {
+    border-radius: 5px;
+    transition: opacity .3s linear;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding: 13px 18px;
+    text-transform: uppercase;
+    top: -3px;
+    margin-bottom: 10px;
+    opacity: 0.72;
+    line-height: 20px;
+    background-color:#77cc6d;
+}
+
+/* game buttons prop */
+.game-button.large {
+    font-size: 1em;
+    padding: 30px 50px;
+}
+
+/* Button image */
+.button-image {
+    float: left;
+    width: 90px;
+    height: 90px;   
+}
+
+/* the game description */
+.game-description{
+    font-size: 10px;
+    font-weight: normal;
+}

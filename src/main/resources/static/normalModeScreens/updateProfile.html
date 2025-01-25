@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script type="module" src="../logout.js"></script>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/home-style.css">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/navbar-style.css">
+        <title>User Profile</title>
+    </head>
+<body>
+    <!-- navigation bar -->
+  <nav class="navbar fixed-top">
+    <div class="container-fluid">
+      <ul class="nav nav-fill w-100">
+          <li class="nav-item"><a href="home.html">
+            <img id="homeIcon" class="icon" src="../FrontEndImages/homeIcon.png" alt="home" width="50" height="42">
+          </a></li>
+          <li class="nav-item"><a id="mapID" href="mapNormal.html">
+              <img id="mapIcon" class="icon" src="../FrontEndImages/mapIcon.png" alt="map" width="50" height="42">
+          </a></li>
+          <li class="nav-item"><a id="food" class="navbar-icon" href="food.html">
+                  <img id="foodIcon" class="icon" src="../FrontEndImages/knifeAndFork.png" alt="restaurants" width="50" height="42">
+                </a></li>
+          <li class="nav-item"><a id="quiz" href="Quiz.html">
+            <img id="quizIcon" class="icon" src="../FrontEndImages/quiz-icon.png" alt="quizzes" width="50" height="42">
+          </a></li>
+          <li class="nav-item"><a id="games" href="games.html">
+              <img id="gameIcon" class="icon" src="../FrontEndImages/gameIcon.png" alt="games" width="50" height="42">
+          </a></li>
+
+          <li class="nav-item dropdown">
+                <a href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img id="userIcon" class="icon" src="../FrontEndImages/user-icon.png" alt="profile" width="50" height="42">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="userProfileNormal.html">Profile</a></li>
+                  <li><a class="dropdown-item" href="favourites.html">Favourites</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a id="logOut" class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="home-container">
+  <img class="profile" src="../FrontEndImages/user-icon.png" alt="profile">
+ 
+    <div class="d-grid gap-2 mx-auto">
+      <label for="modeSelection">Select your mode:</label>
+      <select id="modeSelection">
+          <option value="normal" >Normal Mode</option>
+          <option value="kid">Kids Mode</option>
+      </select>
+      <button id="conFirm" class="btn btn-success">Confirm</button>
+    </div>
+  
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <!-- firebase JS -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  import { getDatabase, ref, set ,onValue, update, push, child} from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+  import { getAuth, updateProfile,onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+
+  // app's Firebase project configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAzS4vlIj4owXJl2oldZKw30cCjHXgSvtY",
+    authDomain: "nccopendata-370311.firebaseapp.com",
+    databaseURL: "https://nccopendata-370311-default-rtdb.europe-west1.firebasedatabase.app/",
+    projectId: "nccopendata-370311",
+    storageBucket: "nccopendata-370311.appspot.com",
+    messagingSenderId: "127216525001",
+    appId: "1:127216525001:web:037425aa4c3a578b3db718",
+    measurementId: "G-LQM24ZDSBD"
+  };
+    
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  const auth = getAuth();
+  const user = auth.currentUser;
+
+
+  conFirm.addEventListener('click', (e) => 
+  {
+    var modeChange = document.getElementById('modeSelection').value;
+    const user= auth.currentUser;
+    const userRef = ref(database, 'users/' + user.uid);
+
+    update(userRef, {mode: modeChange}).then(() => {
+      window.location.href = (modeChange == "normal") ? 'home.html' : '../KidsModeScreens/home.html';
+    }).catch((e) => {
+      console.log(e);
+    })        
+  });
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.bulb-container {
+    display: flex;
+  }
+  
+  #bulb-span {
+    margin: auto 0;
+  }
+  
+  .bulb {
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    float:right; 
+    margin-right: 5px;
+  }
+  
+  .bulb.bulb-empty {
+    background-image: url("../FrontEndImages/empty-bulb.png");
+  }
+  
+  .bulb.bulb-full {
+    background-image: url("../FrontEndImages/full-bulb.png");
+  }

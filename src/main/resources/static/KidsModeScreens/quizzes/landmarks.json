@@ -1,0 +1,70 @@
+[{
+    "q": "Where did the outlaw Robin Hood and his Merry Men live?",
+    "a": [{"text": "Sherwood Forest", "isCorrect": true},
+        {"text": "Nottingham Castle", "isCorrect": false},
+        {"text": "City of Caves", "isCorrect": false}
+    ]
+},
+{
+    "q": "A single tree planted in Southwell is the origin of what type of apple?",
+    "a": [{"text": "Bramley Apple", "isCorrect": true},
+        {"text": "Granny Smith Apple", "isCorrect": false},
+        {"text": "Honeycrisp Apple", "isCorrect": false}
+    ]
+},
+{
+    "q": "The stone Nottingham Castle was built by which monarch?",
+    "a": [{"text": "King Henry II", "isCorrect": true},
+        {"text": "King Richard I", "isCorrect": false},
+        {"text": "King James VI", "isCorrect": false}
+    ]
+},
+{
+    "q": "What is the name of the bell located at Nottingham's Council House which is named after one of Robin Hood's Merry Men",
+    "a": [{"text": "Little John", "isCorrect": true},
+        {"text": "Friar Tuck", "isCorrect": false},
+        {"text": "Alan-A-Dale", "isCorrect": false}
+    ]
+},
+{
+    "q": "Which housing estate in Bulwell is home to roads named after Apollo astronauts?",
+    "a": [{"text": "Lunar Estate", "isCorrect": true},
+        {"text": "Space Estate", "isCorrect": false},
+        {"text": "Crescent Estate", "isCorrect": false}
+    ]
+},
+{
+    "q": "Nottingham Castle is mentioned in which famous book series?",
+    "a": [{"text": "James Bond", "isCorrect": true},
+        {"text": "Harry Potter", "isCorrect": false},
+        {"text": "The Chronicles of Narnia", "isCorrect": false}
+    ]
+},
+{
+    "q": "Wollaton Hall is featured as a set in which famous movie?",
+    "a": [{"text": "The Dark Knight Rises", "isCorrect": true},
+        {"text": "The Lord Of The Rings", "isCorrect": false},
+        {"text": "Harry Potter", "isCorrect": false}
+    ]
+},
+{
+    "q": "The cave art found within the caves of Creswell Crags is from what historical age?",
+    "a": [{"text": "Ice Age", "isCorrect": true},
+        {"text": "Bronze Age", "isCorrect": false},
+        {"text": "Middle Ages", "isCorrect": false}
+    ]
+},
+{
+    "q": "In which era was Nottingham's Wollaton Hall constructed?",
+    "a": [{"text": "Elizabethan", "isCorrect": true},
+        {"text": "Victorian", "isCorrect": false},
+        {"text": "Georgian", "isCorrect": false}
+    ]
+},
+{
+    "q": "Where in Nottingham is the famous robin hood statue located?",
+    "a": [{"text": "Nottingham Castle", "isCorrect": true},
+        {"text": "Wollaton Hall", "isCorrect": false},
+        {"text": "Newstead Abbey", "isCorrect": false}
+    ]
+}]
